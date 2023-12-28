@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+    margin: -1px 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway";
+    text-decoration: none;
+}
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+section {
+    height: fit-content;
+    padding: 5% 0;
+}
+button {
+    margin: 8% 0 0;
+    width: 112px;
+    height: 34px;
+    color: #fff;
+    // background: linear-gradient( 196deg, #020253b1, #1313bbb1, #020253b1);
+    background: transparent;
+    border: 1.3px solid #fff;
+    border-radius: 9px;
+    transition: 0.8s;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+
+    &::after {
+        content: ("");
+        position: absolute;
+        display: block;
+        height: 100%;
+        width: 0%;
+        top: 0;
+        left: 0;
+        // background: aqua;
+        background: linear-gradient(196deg, #020253b1, #0707f5, #020253b1);
+        transition: all 0.5s ease;
+        border-radius: 9px;
+        z-index: -1;
+    }
+
+    &:hover {
+        transform: scale(0.95);
+        // color: #1b1b1b;
+        border: 1.3px solid transparent;
+        &::after {
+            width: 100%;
+        }
+    }
+}
+.button {
+    &::after{
+        background: linear-gradient( 345deg, #684934, #b49a7d, #684934);
+    }
+}
+
+$color1: #644e30;
+$color2: #fff;
+
+@keyframes animar {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

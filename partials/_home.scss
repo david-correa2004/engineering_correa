@@ -1,0 +1,163 @@
+#home{
+    background: url(../assets/img/home-marcenaria2.jpg);
+    position: relative;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    place-items: center;
+    overflow-x: hidden;
+    &::after{
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient( 196deg, #4d342462, #b49a7d62, #4d342462);
+      z-index: 0;
+    }
+    h1{
+        width: 50%;
+        font-size: 30px;
+        font-weight: bold;
+        background: #fff;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        animation: texto 4.5s steps(500, end) alternate infinite;
+        white-space: nowrap;
+        border-right: 5px solid #fff;
+        z-index: 1;
+    }
+    @keyframes texto{
+        0%{
+            width: 0;
+            border-color: transparent;
+        }
+        50%{
+            border-color: #fff;
+        }
+        100%{
+            width: 55%;
+            border-color: transparent;
+        }
+    }
+    @keyframes texto-mob{
+        0%{
+            width: 0;
+            border-color: transparent;
+        }
+        50%{
+            border-color: #fff;
+        }
+        100%{
+            width: 100%;
+            border-color: transparent;
+        }
+    }
+    // h1{
+    //     width: 40%;
+    //     font-size: 35px;
+    //     color: $color1;
+    // }
+}
+@media(min-width: 800px){#home{.header-mob, #sidebar__nav{display: none;}}}
+@media(max-width: 800px){
+    #home{
+        padding: 5%;
+        place-items: start;
+        h1{
+            width: 80%;
+            font-size: 25px;
+            animation: texto-mob 4.5s steps(500, end) alternate infinite;
+        }
+        .header-mob{
+            .logo{
+                position: absolute;
+                width: 30%;
+                top: 3%;
+                left: 5%;
+                img{
+                    width: 80%;
+                   }
+                }
+                #menu__btn{
+                    background-color: transparent;
+                    position: fixed;
+                    svg{width: 25px;
+                    height:25px}
+                    top: 4%;
+                    height: 25px;
+                    width: 26px;
+                    right: 6%;
+                    z-index: 15;
+                }
+        }
+        #sidebar__nav {
+            position: fixed;
+            inset: 0;
+            z-index: 999;
+            background: rgba(#000, 50%);
+            visibility: hidden;
+            opacity: 0;
+            transition: all .5s ease-out;
+    
+            &[data-active="true"] {
+                visibility: visible;
+                opacity: 1;
+    
+                ul {
+                    right: 0;
+                    transition: all .3s ease-out;
+                    transition-delay: .5s;
+                }
+            }
+    
+            ul {
+                position: absolute;
+                width: 80%;
+                right: -80%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                list-style: none;
+                gap: 2.5rem 0;
+                top: 0;
+                bottom: 0;
+                background: #926d54;
+                transition: all .2s ease;
+    
+                li {
+                    a {
+                        display: block;
+                        width: 100%;
+                        text-align: start;
+                        font-size: 1.2rem;
+                        color: $color2;
+                    }
+             
+                }
+    
+                #close__btn {
+                    position: absolute;
+                    top: -25.5%;
+                    left: 5%;
+                    background: transparent;
+                    font-size: 1.5rem;
+                    cursor: pointer;
+                        svg{
+                            width: 15px;
+                        }
+                }
+            }
+        }
+    }
+}

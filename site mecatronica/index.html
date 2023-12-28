@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <title>Mecatronica</title>
+    <link rel="shortcut icon" href="../assets/icon/favicon.svg" type="image/x-icon">
+    <title>icone na barra de titulo</title>
+</head>
+
+<body>
+    <header class="header" data-active="true">
+        <nav>
+            <div class="cont">
+                <div class="logo">
+                    <img src="../assets/icon/logo-david.svg" alt="">
+                </div>
+                <ul>
+                    <li><a class="active" id="a_nav" href="#home-mec">Página Inicial</a></li>
+                    <li><a id="a_nav" href="#sobre-mim-mec">Sobre mim</a></li>
+                    <li><a id="a_nav" href="#prod-mec">Produtos</a></li>
+                    <li><a id="a_nav" href="#form-mec">Contatos</a></li>
+                </ul>
+                <div class="icon">
+                    <a href="" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="34.844" height="34.845"
+                            viewBox="0 0 34.844 34.845">
+                            <path id="_073648578491af67fdc6a37bce022a16" data-name="073648578491af67fdc6a37bce022a16"
+                                d="M11.616,17.423a5.807,5.807,0,1,1,5.807,5.808,5.807,5.807,0,0,1-5.807-5.808m-3.14,0a8.946,8.946,0,1,0,8.946-8.946,8.946,8.946,0,0,0-8.946,8.946m16.156-9.3a2.091,2.091,0,1,0,2.091-2.09,2.092,2.092,0,0,0-2.091,2.09M10.383,31.6A9.624,9.624,0,0,1,7.148,31a5.419,5.419,0,0,1-2-1.3,5.385,5.385,0,0,1-1.3-2,9.624,9.624,0,0,1-.6-3.235c-.084-1.837-.1-2.388-.1-7.041s.018-5.2.1-7.041a9.669,9.669,0,0,1,.6-3.235,5.419,5.419,0,0,1,1.3-2,5.379,5.379,0,0,1,2-1.3,9.624,9.624,0,0,1,3.235-.6c1.837-.084,2.388-.1,7.039-.1s5.2.018,7.041.1a9.669,9.669,0,0,1,3.235.6,5.4,5.4,0,0,1,2,1.3,5.408,5.408,0,0,1,1.3,2,9.624,9.624,0,0,1,.6,3.235c.084,1.838.1,2.388.1,7.041s-.017,5.2-.1,7.041a9.66,9.66,0,0,1-.6,3.235A5.768,5.768,0,0,1,27.7,31a9.624,9.624,0,0,1-3.235.6c-1.837.084-2.388.1-7.041.1s-5.2-.017-7.039-.1M10.24.106A12.78,12.78,0,0,0,6.011.915a8.549,8.549,0,0,0-3.086,2.01A8.526,8.526,0,0,0,.915,6.011,12.78,12.78,0,0,0,.106,10.24C.02,12.1,0,12.691,0,17.423s.02,5.325.106,7.183a12.78,12.78,0,0,0,.809,4.229,8.519,8.519,0,0,0,2.01,3.086,8.544,8.544,0,0,0,3.086,2.01,12.787,12.787,0,0,0,4.229.809c1.859.084,2.452.106,7.183.106s5.325-.02,7.183-.106a12.78,12.78,0,0,0,4.229-.809,8.909,8.909,0,0,0,5.1-5.1,12.744,12.744,0,0,0,.809-4.229c.084-1.859.1-2.452.1-7.183s-.02-5.325-.1-7.183a12.78,12.78,0,0,0-.809-4.229,8.568,8.568,0,0,0-2.01-3.086A8.544,8.544,0,0,0,28.836.915,12.759,12.759,0,0,0,24.607.106C22.749.021,22.155,0,17.424,0S12.1.02,10.24.106"
+                                fill="#fff" />
+                        </svg>
+                    </a>
+                    <a href="" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="34.689" height="34.845"
+                            viewBox="0 0 34.689 34.845">
+                            <path id="_359de351d95fad8e27d4552078092a3b" data-name="359de351d95fad8e27d4552078092a3b"
+                                d="M29.635,5.064A17.274,17.274,0,0,0,2.45,25.9L0,34.845l9.156-2.4a17.264,17.264,0,0,0,8.254,2.1h.007A17.273,17.273,0,0,0,29.635,5.064M17.417,31.629h-.006a14.337,14.337,0,0,1-7.307-2l-.524-.311L4.147,30.743l1.45-5.3L5.256,24.9a14.357,14.357,0,1,1,12.161,6.725m7.874-10.748c-.432-.216-2.553-1.26-2.949-1.4s-.683-.216-.971.216-1.115,1.4-1.367,1.692-.5.324-.935.108A11.788,11.788,0,0,1,15.6,19.352a13,13,0,0,1-2.4-2.989c-.252-.432-.027-.665.189-.881.194-.193.432-.5.647-.756a2.943,2.943,0,0,0,.432-.72.794.794,0,0,0-.036-.756c-.108-.216-.971-2.339-1.331-3.2-.35-.841-.706-.727-.971-.741s-.539-.015-.827-.015a1.586,1.586,0,0,0-1.151.54,4.838,4.838,0,0,0-1.51,3.6A8.391,8.391,0,0,0,10.4,17.894c.216.288,3.043,4.646,7.372,6.514a24.856,24.856,0,0,0,2.46.909,5.919,5.919,0,0,0,2.718.171,4.445,4.445,0,0,0,2.913-2.051,3.605,3.605,0,0,0,.252-2.052c-.108-.18-.4-.288-.827-.5"
+                                fill="#fff" fill-rule="evenodd" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section id="home-mec">
+        <div class="header-mob">
+            <div class="logo">
+                <img src="../assets/icon/logo2.svg" alt="">
+            </div>
+            <div id="menu__btn">
+                <?xml version="1.0" encoding="UTF-8"?>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                    id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                    xml:space="preserve" width="512" height="512">
+                    <g>
+                        <path
+                            d="M480,224H32c-17.673,0-32,14.327-32,32s14.327,32,32,32h448c17.673,0,32-14.327,32-32S497.673,224,480,224z"
+                            fill="#fff" />
+                        <path
+                            d="M32,138.667h448c17.673,0,32-14.327,32-32s-14.327-32-32-32H32c-17.673,0-32,14.327-32,32S14.327,138.667,32,138.667z"
+                            fill="#fff" />
+                        <path
+                            d="M480,373.333H32c-17.673,0-32,14.327-32,32s14.327,32,32,32h448c17.673,0,32-14.327,32-32S497.673,373.333,480,373.333z"
+                            fill="#fff" />
+                    </g>
+                </svg>
+            </div>
+        </div>
+
+        <div id="sidebar__nav" data-active="false">
+            <ul>
+                <li><a href="#home-mec">Página Inicial</a></li>
+                <li><a href="#sobre-mim-mec">Sobre mim</a></li>
+                <li><a href="#prod-mec">Produtos</a></li>
+                <li><a href="#form-mec">Contatos</a></li>
+                <div id="close__btn">
+                    <?xml version="1.0" encoding="UTF-8"?>
+                    <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="512" height="512">
+                        <path
+                            d="M23.707.293h0a1,1,0,0,0-1.414,0L12,10.586,1.707.293a1,1,0,0,0-1.414,0h0a1,1,0,0,0,0,1.414L10.586,12,.293,22.293a1,1,0,0,0,0,1.414h0a1,1,0,0,0,1.414,0L12,13.414,22.293,23.707a1,1,0,0,0,1.414,0h0a1,1,0,0,0,0-1.414L13.414,12,23.707,1.707A1,1,0,0,0,23.707.293Z"
+                            fill="#fff" />
+                    </svg>
+                </div>
+            </ul>
+        </div>
+        <div class="text">
+            <h1>"Explorando a sinergia entre mecânica, eletrônica e computação: 
+                <strong>Produtos inovadores em mecatrônica</strong>".
+            </h1>
+        </div>
+    </section>
+    <section id="sobre-mim-mec">
+        <div class="container">
+            <div class="text">
+                <h2><p>David</p>
+                    Venha me conhecer
+                </h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium inventore odit autem non,
+                    consequuntur eius iure doloribus, consequatur iusto minus voluptas, beatae repudiandae qui hic
+                    voluptatum! Distinctio repellendus odit molestiae!
+                </p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium inventore odit autem non,
+                    consequuntur eius iure doloribus, consequatur iusto minus voluptas, beatae repudiandae qui hic
+                    voluptatum! Distinctio repellendus odit molestiae!
+                </p>
+                <a href="https://wa.me/5535998876688" target="_blank">
+                    <button>Saber mais</button>
+                </a>
+            </div>
+        </div>
+        <div data-active="false" class="btn-flut">
+            <a href="" target="_blank">
+                <img src="../assets/icon/whatsapp.svg" alt="">
+            </a>
+        </div>
+    </section>
+    <section id="prod-mec">
+        <div class="text">
+            <h2>Produtos de mecatrônica que combinam eletrônica, mecânica e tecnologia.</h2>
+        </div>
+        <div class="container" id="produtos" data-active="false">
+            <div class="produtos">
+                <div class="card">
+                    <div class="cont">
+                        <img src="../assets/img/robo4.jpg" alt="">
+                        <div class="text">
+                            <h3>Robô corpo inteiro</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium maiores, atque
+                                voluptatibus corporis velit eum nobis ipsam excepturi ducimus quisquam quidem adipisci nemo
+                                consectetur praesentium provident corrupti vel voluptas natus.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="produtos">
+                <div class="card">
+                    <div class="cont">
+                        <img src="../assets/img/cara-robo.jfif" alt="">
+                        <div class="text">
+                            <h3>Cara robótica</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium maiores, atque
+                                voluptatibus corporis velit eum nobis ipsam excepturi ducimus quisquam quidem adipisci nemo
+                                consectetur praesentium provident corrupti vel voluptas natus.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="produtos">
+                <div class="card">
+                    <div class="cont">
+                        <div class="img">
+                            <div class="cont2">
+                                <div class="img2">
+                                    <img src="../assets/img/robo4.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text">
+                            <h3>Robô corpo inteiro</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium maiores, atque
+                                voluptatibus corporis velit eum nobis ipsam excepturi ducimus quisquam quidem adipisci nemo
+                                consectetur praesentium provident corrupti vel voluptas natus.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="container-mob">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div data-produtos="robo" class="swiper-slide p-im">
+                        <img src="../assets/img/robo3.jpg" alt="">
+                    </div>
+                    <div data-produtos="cararobo" class="swiper-slide p-im">
+                        <img src="../assets/img/cara-robo.jfif" alt="">
+                    </div>
+                    <div data-produtos="robo" class="swiper-slide p-im">
+                        <img src="../assets/img/robo3.jpg" alt="">
+                    </div>
+                </div>
+                <div class="pagination"></div>
+                
+            </div>
+        </div>
+                  
+    </section>
+    <section id="form-mec">
+        <div class="container">
+            <div class="cont-form">
+                <form action="">
+                    <div class="cont">
+                        <h2>Como podemos ajuda-lo?</h2>
+
+                        <input class="ip" type="text" id="nome" class="form__input" placeholder="Nome completo:"
+                            required>
+                        <select id="assunto" value="" type="text" name="phone" placeholder="Assunto" required>
+                            <option class="select" value="">Selecione sua preferencia:</option>
+                            <option value="Marcenaria">Marcenaria</option>
+                            <option value="Mecatronica">Mecatronica</option>
+                        </select>
+                        <textarea class="ip3" id="mens" cols="30" rows="10" placeholder="Deixe sua dúvida:"
+                            required></textarea>
+                        <button id="submit" class="form__submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
+            <div class="text">
+                <div class="links">
+                    <a href="" target="_blank">
+                        <h4 class="h4">Endereço:</h4>
+                        <h4>Retiro dos Pimenta Perdões, MG</h4>
+                    </a>
+                    <a href="tel:35998876688" target="_blank">
+                        <h4>Telefone:</h4>
+                        <h4>(35)99887-6688</h4>
+                    </a>
+                </div>
+                <div class="icon">
+                    <a href="" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="34.844" height="34.845" viewBox="0 0 34.844 34.845">
+                            <path id="_073648578491af67fdc6a37bce022a16" data-name="073648578491af67fdc6a37bce022a16"
+                                d="M11.616,17.423a5.807,5.807,0,1,1,5.807,5.808,5.807,5.807,0,0,1-5.807-5.808m-3.14,0a8.946,8.946,0,1,0,8.946-8.946,8.946,8.946,0,0,0-8.946,8.946m16.156-9.3a2.091,2.091,0,1,0,2.091-2.09,2.092,2.092,0,0,0-2.091,2.09M10.383,31.6A9.624,9.624,0,0,1,7.148,31a5.419,5.419,0,0,1-2-1.3,5.385,5.385,0,0,1-1.3-2,9.624,9.624,0,0,1-.6-3.235c-.084-1.837-.1-2.388-.1-7.041s.018-5.2.1-7.041a9.669,9.669,0,0,1,.6-3.235,5.419,5.419,0,0,1,1.3-2,5.379,5.379,0,0,1,2-1.3,9.624,9.624,0,0,1,3.235-.6c1.837-.084,2.388-.1,7.039-.1s5.2.018,7.041.1a9.669,9.669,0,0,1,3.235.6,5.4,5.4,0,0,1,2,1.3,5.408,5.408,0,0,1,1.3,2,9.624,9.624,0,0,1,.6,3.235c.084,1.838.1,2.388.1,7.041s-.017,5.2-.1,7.041a9.66,9.66,0,0,1-.6,3.235A5.768,5.768,0,0,1,27.7,31a9.624,9.624,0,0,1-3.235.6c-1.837.084-2.388.1-7.041.1s-5.2-.017-7.039-.1M10.24.106A12.78,12.78,0,0,0,6.011.915a8.549,8.549,0,0,0-3.086,2.01A8.526,8.526,0,0,0,.915,6.011,12.78,12.78,0,0,0,.106,10.24C.02,12.1,0,12.691,0,17.423s.02,5.325.106,7.183a12.78,12.78,0,0,0,.809,4.229,8.519,8.519,0,0,0,2.01,3.086,8.544,8.544,0,0,0,3.086,2.01,12.787,12.787,0,0,0,4.229.809c1.859.084,2.452.106,7.183.106s5.325-.02,7.183-.106a12.78,12.78,0,0,0,4.229-.809,8.909,8.909,0,0,0,5.1-5.1,12.744,12.744,0,0,0,.809-4.229c.084-1.859.1-2.452.1-7.183s-.02-5.325-.1-7.183a12.78,12.78,0,0,0-.809-4.229,8.568,8.568,0,0,0-2.01-3.086A8.544,8.544,0,0,0,28.836.915,12.759,12.759,0,0,0,24.607.106C22.749.021,22.155,0,17.424,0S12.1.02,10.24.106"
+                                fill="#fff" />
+                        </svg>
+                    </a>
+                    <a href="" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="34.689" height="34.845" viewBox="0 0 34.689 34.845">
+                            <path id="_359de351d95fad8e27d4552078092a3b" data-name="359de351d95fad8e27d4552078092a3b"
+                                d="M29.635,5.064A17.274,17.274,0,0,0,2.45,25.9L0,34.845l9.156-2.4a17.264,17.264,0,0,0,8.254,2.1h.007A17.273,17.273,0,0,0,29.635,5.064M17.417,31.629h-.006a14.337,14.337,0,0,1-7.307-2l-.524-.311L4.147,30.743l1.45-5.3L5.256,24.9a14.357,14.357,0,1,1,12.161,6.725m7.874-10.748c-.432-.216-2.553-1.26-2.949-1.4s-.683-.216-.971.216-1.115,1.4-1.367,1.692-.5.324-.935.108A11.788,11.788,0,0,1,15.6,19.352a13,13,0,0,1-2.4-2.989c-.252-.432-.027-.665.189-.881.194-.193.432-.5.647-.756a2.943,2.943,0,0,0,.432-.72.794.794,0,0,0-.036-.756c-.108-.216-.971-2.339-1.331-3.2-.35-.841-.706-.727-.971-.741s-.539-.015-.827-.015a1.586,1.586,0,0,0-1.151.54,4.838,4.838,0,0,0-1.51,3.6A8.391,8.391,0,0,0,10.4,17.894c.216.288,3.043,4.646,7.372,6.514a24.856,24.856,0,0,0,2.46.909,5.919,5.919,0,0,0,2.718.171,4.445,4.445,0,0,0,2.913-2.051,3.605,3.605,0,0,0,.252-2.052c-.108-.18-.4-.288-.827-.5"
+                                fill="#fff" fill-rule="evenodd" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer-mec">
+        <img src="../assets/icon/logo2.svg" alt="">
+    </footer>
+        
+
+    <div id="modal_container" class="modal-container" data-active="false">
+        <div class="modal mod-mec">
+            <div class="text">
+                <h2>Robô</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum temporibus incidunt sunt quam amet
+                    nostrum, totam voluptas neque distinctio, quisquam ut labore assumenda ex pariatur optio porro
+                    voluptates autem sed!</p>
+            </div>
+            <div id="fechar" class="fechar">
+                <svg width="254" height="254" viewBox="0 0 254 254" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M17.2667 253.307C12.9505 253.307 8.6372 251.66 5.34388 248.367C-1.23995 241.783 -1.23995 231.108 5.34388 224.527L224.524 5.34656C231.105 -1.23727 241.786 -1.23727 248.364 5.34656C254.951 11.9304 254.951 22.6056 248.364 29.1894L29.1839 248.369C25.8962 251.66 21.5829 253.307 17.2667 253.307Z"
+                        fill="#fff" />
+                    <path
+                        d="M236.447 253.306C232.133 253.306 227.817 251.66 224.527 248.366L5.34681 29.1865C-1.23702 22.6027 -1.23702 11.9275 5.34681 5.34363C11.9306 -1.2402 22.6086 -1.2402 29.1897 5.34363L248.37 224.524C254.956 231.107 254.956 241.783 248.37 248.364C245.076 251.66 240.76 253.306 236.447 253.306Z"
+                        fill="#fff" />
+                </svg>
+            </div>
+        </div>
+    </div>
+    
+
+    
+</body>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="../script/car.js"></script>
+<script src="../script/prod.js"></script>
+<!-- <script src="../script/nav.js"></script> -->
+<script src="../script/nav copy.js"></script>
+<script src="../script/scroll.js"></script>
+<script type="text/javascript" src="../script/vanilla-tilt.js"></script>
+<script>VanillaTilt.init(document.querySelectorAll(".card"), {max: 25, speed:400, glare: true, "max-glare": .7,});</script>
+
+</html>

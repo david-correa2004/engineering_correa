@@ -1,0 +1,162 @@
+
+#abertura{
+    background: #03658C;
+    width: 100%;
+    height: 74.24vh;
+    padding: 0;
+    nav{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 1%;
+        .img{
+            position: relative;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: #000;
+            overflow: hidden;
+            &::before{
+                content: "";
+                position: absolute;
+                inset: 0px 30px;
+                transition: .5s;
+                background: linear-gradient( 315deg, rgb(1, 1, 134), rgb(98, 98, 255));
+                animation: animar 5.5s linear infinite;
+            }
+            &:hover::before{
+                inset: 0px 0;
+            }
+            &::after{
+                content: "";
+                position: absolute;
+                inset: 6px;
+                background-color: #4b4b4b;
+                border-radius: 50%;
+                z-index: 1;
+            }
+            a{
+                position: absolute;
+                inset: 3px;
+                border-radius: 50%;
+                z-index: 2;
+                overflow: hidden;
+                img{
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    pointer-events: none;
+                }
+            }
+    
+        }
+
+        }
+
+    .container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        .marc{
+            background: url(../assets/img/marcenaria.jpg);
+            position: relative;
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: .8s;
+            filter:grayscale(1);
+            text-decoration: none;
+            &::after{
+                background-color:#00000067;
+            }
+            h1{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                color: #fff;
+                font-size: 30px;
+                transition: .5s;
+            }
+            &:hover{
+                width: 800%;
+                z-index: 99;
+                background-position: 50%;
+                filter: grayscale(0);
+                margin-right: -13%;
+                h1{
+                    color: #644e30;
+                }
+            }
+        }
+        .mec{
+            background: url(../assets/img/mecatronica.jpg);
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: .8s;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            filter:grayscale(1);
+            
+            h1{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                color: #fff;
+                font-size: 30px;
+                transition: .5s;
+            }
+            &:hover{
+                width: 800%;
+                z-index: 999;
+                background-position: 50%;
+                filter:grayscale(0);
+                margin-left: -13%;
+                h1{
+                    color: rgb(0, 0, 87);
+                }
+            }
+        }
+
+    }
+}
+@media(max-width: 800px){
+    #abertura{
+        height: 80vh;
+        nav{
+            padding: 5% 0;
+        }
+        .container{
+            flex-direction: column;
+            .marc, .mec{
+                &:hover{
+                    width: 100%;
+                    background-position: center;
+                    margin: 0;
+                }
+            }
+            .marc{
+                filter:grayscale(0);  
+                h1{
+                    color: #644e30;
+                }
+            }
+            .mec{
+                filter:grayscale(0);   
+                h1{
+                    color: rgb(0, 0, 87);
+                }           
+            }
+        }
+    }
+}

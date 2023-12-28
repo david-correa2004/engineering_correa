@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: -1px 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway";
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+section{
+    padding: 0;
+}
+
+
+::-webkit-scrollbar{
+    background-image: linear-gradient( 90deg, #684934, #b49a7d, #684934);
+    width: 15px;
+}
+::-webkit-scrollbar-thumb{
+    background-image: linear-gradient( 90deg, #b49a7d, #684934, #b49a7d);
+    width: 15px;
+    border-radius: 10px;
+}
+
+
+
+
+$color1:#644e30;
+$color2:#fff;
+
+
+@keyframes animar {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@import "../partials/config";
+@import "../partials/home";
+@import "../partials/header";
+@import "../partials/prod";
+@import "../partials/modal";
+@import "../partials/sobre-mim";
+@import "../partials/form";
+@import "../partials/roda-pe";

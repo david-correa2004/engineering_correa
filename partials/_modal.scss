@@ -1,0 +1,111 @@
+#modal_container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s ease;
+
+    &[data-active=true]{
+        opacity: 1;
+        visibility: visible;
+
+        .modal {
+            margin-top: 0;
+            opacity: 1;
+            overflow: visible;
+        }
+    }
+    .mod-mec{
+        background-image: linear-gradient( 196deg, rgb(2, 2, 83), rgb(19, 19, 187), rgb(2, 2, 83)) !important;
+    }
+    .modal{
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background-image: linear-gradient( 345deg, #684934, #b49a7d, #684934);
+        z-index: 10;
+        width: 40%;
+        height: 40%;
+        max-width: 80%;
+        border-radius: 20px;
+        display: flex;
+        overflow: hidden;
+        opacity: 0;
+        transition: all .3s ease-out;
+        margin-top: 2rem;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        
+        .fechar{
+            width: 4%;
+            height: 10%;
+            background-color: transparent;
+            position: absolute;
+            top: 8%;
+            right: 2%;
+            cursor: pointer;
+            .btn-x{
+                width: 20px;
+                height: 2px;
+                background: #fff;
+                position: relative;
+                transform: rotateZ(-45deg);
+                &:nth-child(2){
+                    bottom: 2.5%;
+                    transform: rotateZ(45deg);
+                }
+            }
+        }
+        .text{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            padding: 5%;
+            h2, p{
+                color: $color2;
+            }
+            p{
+                padding: 10% 0;
+                font-size: 15px;
+            }
+        }
+    }
+}
+@media(max-width: 800px){
+    #modal_container{
+        .modal{
+            flex-direction: column;
+            width: 90%;
+            height: 35%;
+            padding: 0 5%;
+            .fechar{
+                width: 6%;
+                position: absolute;
+                padding: 0;
+                top: 8%;
+                right: 4%;
+                svg{
+                    z-index: 999;
+                }
+            }
+            .text{
+                h2{
+                    text-align: center;
+                    width: 100%;
+                    padding-top: 5%;
+                }
+            }
+        }
+    }
+}

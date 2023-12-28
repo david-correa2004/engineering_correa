@@ -1,0 +1,173 @@
+#form {
+    background: url(../assets/img/form-marc.png);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 5% 10% 5%;
+    .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 70%;
+        gap: 0 5rem;
+        .cont-form {
+            background-image: linear-gradient(345deg, #684934, #b49a7d, #684934);
+            position: relative;
+            padding: 5% 0;
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            z-index: 2;
+            border-radius: 9px;
+            box-shadow: 0px 3px 12px #00000015;
+            form {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            .cont {
+                width: 60%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 1rem 0;
+                h2 {
+                    font-size: 20px;
+                    color: #fff;
+                }
+                textarea,
+                input,
+                select {
+                    width: 100%;
+                    height: 40px;
+                    overflow: hidden;
+                    resize: none;
+                    background: transparent;
+                    color: #fff;
+                    font-size: 13px;
+                    border: none;
+                    border-bottom: 1px solid #fff;
+
+                    &::placeholder {
+                        color: #fff;
+                        opacity: 0.8;
+                    }
+                }
+                select {
+                    cursor: pointer;
+                    option {
+                        color: #000;
+                    }
+                }
+                .ip {
+                    outline: none;
+                }
+                .ip3 {
+                    outline: none;
+                }
+                button {
+                    width: 120px;
+                    height: 35px;
+                    margin: 5% 0 0;
+                    cursor: pointer;
+                }
+            }
+        }
+        .text {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem 0;
+            .links {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem 0;
+
+                a {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 0.2rem;
+                }
+                h4 {
+                    display: flex;
+                    gap: 0 0.5rem;
+                    font-weight: 500;
+                    color: #fff;
+                    &:nth-child(2) {
+                        color: #ffffffb0;
+                    }
+                }
+            }
+            .icon {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                gap: 0 1.5rem;
+                svg {
+                    transition: all 0.3s ease-in;
+                    &:hover {
+                        transform: scale(0.8);
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 64rem) {
+    #form {
+        background: url(../assets/img/sobre-marc2-mob.png);
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        justify-content: center;
+        .container {
+            width: 90%;
+            flex-direction: column;
+            gap: 2rem 0;
+            .cont-form {
+                width: 100%;
+                padding: 10% 0;
+            }
+            .text {
+                width: 100%;
+                flex-direction: row;
+                align-items: center;
+                justify-content: start;
+                order: 2;
+                padding: 5% 0;
+                gap: 1rem 0;
+                .links {
+                    a{
+                        align-items: start;
+                    }
+                    h4 {
+                        width: 80%;
+                    }
+                }
+                .icon{
+                    flex-direction: column;
+                    gap: 1rem 0;
+                }
+            }
+        }
+    }
+}

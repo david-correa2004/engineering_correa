@@ -1,0 +1,107 @@
+#sobre-mim{
+    // background-image: linear-gradient( 344deg, #684934, #b49a7d, #684934);
+    background: url(../assets/img/sobre-marc2.png);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        .text{
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: center;
+            gap: 1.5rem 0;
+            h2, h4, p{
+                color: $color2;
+            }
+            h2{
+                display: flex;
+                flex-direction: column;
+                gap: .3rem 0;
+                font-size: 22px;
+                color: #fff;
+                h4{
+                    font-weight: 600;
+                }
+            }
+            p{
+                width: 70%;
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 1.2rem;
+            }
+        }
+    }
+    .btn-flut {
+        height: 50px;
+        width: 50px;
+        position: fixed;
+        z-index: 9;
+        bottom: 10%;
+        right: -5%;
+        display: grid;
+        place-items: center;
+        transition: all 0.4s ease-in;
+        z-index: 9;
+        cursor: pointer;
+        &:hover {
+            transform: scale(0.9);
+        }
+        &[data-active="true"] {
+            right: 5%;
+        }
+        img {
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 8;
+        }
+    }
+}
+@media(max-width: 800px){
+    #sobre-mim{
+        background: url(../assets/img/sobre-marc2-mob.png);
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        align-items: start;
+        position: relative;
+        &::after{
+          content: '';
+          display: block;
+          position: absolute;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background: #0000003e;
+          z-index: 0;
+        }
+        .container{
+            align-items: start;
+            z-index: 1;
+            .text{
+                align-items: center;
+                width: 100%;
+                h2, p{
+                    width: 90%;
+                }
+            }
+        }
+        // .btn-flut{
+        //     display: none;
+        // }
+    }
+}

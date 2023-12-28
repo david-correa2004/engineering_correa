@@ -1,0 +1,21 @@
+
+::-webkit-scrollbar{
+    background-image: linear-gradient( 90deg, #020253, #1313bb, #020253);
+    width: 15px;
+}
+::-webkit-scrollbar-thumb{
+    background-image: linear-gradient( 90deg, #1313bb, #020253, #1313bb);
+    // background-color: #0000ea;
+    width: 15px;
+    border-radius: 10px;
+}
+@import "../partials/config";
+@import "../partials/abertura";
+@import "../partials/home-mec";
+@import "../partials/header";
+@import "../partials/prod-mec";
+@import "../partials/modal";
+@import "../partials/sobre-mim-mec";
+@import "../partials/form-mec";
+@import "../partials/carta";
+@import "../partials/roda-pe";
